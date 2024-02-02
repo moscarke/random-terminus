@@ -14,8 +14,8 @@ xhttpr.onload = ()=> {
 		const response = JSON.parse(xhttpr.response);
 		const list = response["data"];
 		for (let i = 0; i < list.length; i++){
-			terminus.push(list[i]["orig_tc"]);
-			terminus.push(list[i]["dest_tc"]);
+			terminus.push(list[i]["orig_tc"] + "</td><td> - </td><td>" + list[i]["route"]);
+			terminus.push(list[i]["dest_tc"] + "</td><td> - </td><td>" + list[i]["route"]);
 		}
 		/*let x = "<tr><td>" + removeDuplicates(terminus).join("</td></tr><tr><td>") + "</td></tr>";
 		
@@ -38,10 +38,10 @@ xhttpr.onload = ()=> {
 		const response = JSON.parse(xhttpr.response);
 		const list = response["data"];
 		for (let i = 0; i < list.length; i++){
-			terminus.push(list[i]["orig_tc"]);
-			terminus.push(list[i]["dest_tc"]);
+			terminus.push(list[i]["orig_tc"] + "</td><td> - </td><td>" + list[i]["route"]);
+			terminus.push(list[i]["dest_tc"] + "</td><td> - </td><td>" + list[i]["route"]);
 		}
-		terminus = removeDuplicates(terminus);
+		//terminus = removeDuplicates(terminus);
 		let x = "<tr><td>" + terminus.join("</td></tr><tr><td>") + "</td></tr>";
 		
 		findFourStops();
