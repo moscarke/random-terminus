@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css here -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <p id="line" style="display:none;"></p>
+    <p id="station" style="display:none;"></p>
+    <div class="centerDiv">
+      <h1>4 Random Terminus</h1>
+    </div>
+	<h3 id="routeNumber"></h1>
+	<h3 id="stopName"></h1>
+	
+
+    <div id="routeList" style="display: none;">
+      <table id="listTable" class="timetable">
+        
+      </table>
+    </div>
+
+    <div id="stationList" style="display: none;">
+      <table id="stationTable" class="timetable">
+        
+      </table>
+    </div>
+	
+	<div class="centerDiv">
+      <span id="waiting" class="loadingsrn" style="color: lime;">請稍等</span>
+    </div>
+
+    <div class="centerDiv" id="loadingdiv">
+      <span id="loading" class="loadingsrn" style="display: none;">搜尋中...</span>
+    </div>
+	
+	
+
+	<script src="script.js"></script>
+  </body>
+</html>
